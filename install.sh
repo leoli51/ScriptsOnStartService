@@ -2,8 +2,8 @@
 
 # Check if the script is run as root
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
+    then echo "Please run as root"
+    exit
 fi
 
 telegram_bots_dir="/home/TelegramBots/"
@@ -22,11 +22,11 @@ mv $service_unit_name $systemd_dir
 
 # download and move uninstall script
 curl -o $uninstall_script "https://raw.githubusercontent.com/leoli51/TelegramBotService/main/uninstall.sh"
-mv $uninstall_script $telegram_bot_dir
+mv $uninstall_script $telegram_bots_dir
 
 # download and move the start bots script
 curl -o $start_bots_script "https://raw.githubusercontent.com/leoli51/TelegramBotService/main/start_bots.sh"
-mv $start_bots_script $telegram_bot_dir
+mv $start_bots_script $telegram_bots_dir
 
 # enabling service
 systemctl daemon-reload && systemctl enable $service_unit_name
