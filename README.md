@@ -4,7 +4,7 @@ A systemd service to run telegram bots at startup. And actually any script.
 
 ## Installation
 
-`curl "https://raw.githubusercontent.com/leoli51/TelegramBotService/main/install.sh" > sudo bash`
+`curl "https://raw.githubusercontent.com/leoli51/TelegramBotService/main/install.sh" | sudo bash`
 
 ## Use
 
@@ -15,4 +15,4 @@ Here is how you can run your bots at startup:
 3. Create a `start_telegram_bot.sh` script in your folder.
 4. Configure the script to start your bot.
 
-The configuration is very generic and can run arbitrarty scripts. So be careful what you put in there :). 
+The configuration is very generic and can run arbitrarty scripts. So be careful what you put in there :).

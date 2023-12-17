@@ -34,3 +34,4 @@ if [[ $? -eq 0 ]]; then
     echo "TelegramBots successfully installed."
 else 
     echo "WARNING: Service could not be activated."
+fi
