@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram bots service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/home/TelegramBots/start_bots.sh
+
+[Install]
+WantedBy=multi-user.target
